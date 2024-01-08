@@ -98,11 +98,11 @@ body {
     display: none;
     outline: none;
   }
-  @media screen and (max-width: 990px) {
+  /* @media screen and (max-width: 990px) {
     .main-navigation .menu-toggle {
       display: inline-block;
     }
-  }
+  } */
   .main-navigation .menu-toggle:hover,
   .main-navigation .menu-toggle:active {
     border-color: #009ad8;
@@ -149,11 +149,11 @@ body {
     clear: both;
     display: none;
   }
-  @media screen and (min-width: 991px) {
+  /* @media screen and (min-width: 991px) {
     .mobile-navigation {
       display: none !important;
     }
-  }
+  } */
   .mobile-navigation .menu {
     background: #262936;
     list-style: none;
@@ -279,6 +279,12 @@ body {
     .forecast-container .forecast.today {
       display: block;
       width: 100%;
+    }
+  }
+  @media screen and (max-width: 550px) {
+    .forecast-container .forecast.today ,.forecast-table .table-data ,.forecast-table .main-data{
+      display: block;
+      width: 90% !important;
     }
   }
    .forecast .forecast-header {
